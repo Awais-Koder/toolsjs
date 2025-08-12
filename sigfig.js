@@ -557,7 +557,7 @@
                     Object.keys(tests).forEach(k => {
                         const got = countSigFigsFromString(k);
                         const expect = tests[k];
-                        if (got !== expect) console.warn('TEST FAIL', k, expect, got); else console.log('OK', k, '→', got);
+                        if (got !== expect) console.warn('TEST FAIL', k, expect, got); else console.log('OK');
                     });
                     console.groupEnd && console.groupEnd();
                 } catch (e) { console.error('Self-test error', e); }
